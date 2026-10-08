@@ -16,12 +16,13 @@ To install Tapis globally from a local clone:
 
 ```bash
 npm install -g .
+```
 
-Configuration
+## Configuration
 
-Create a tapis.config.json file in the root directory of the target project:
-JSON
+Create a `tapis.config.json` file in the root directory of the target project:
 
+```json
 {
   "boundaries": [
     {
@@ -43,19 +44,20 @@ JSON
     "requiredFiles": ["claude.md", ".cursorrules"]
   }
 }
+```
 
-Usage
+## Usage
 
-    Run manual checks:
-    Bash
+- Run manual checks:
+  ```bash
+  tapis check
+  ```
 
-    tapis check
+- Install the Git pre-commit hook:
+  ```bash
+  tapis init-hook
+  ```
 
-    Install the Git pre-commit hook:
-    Bash
-
-    tapis init-hook
-
-License
+## License
 
 MIT
